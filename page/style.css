@@ -1,0 +1,106 @@
+body {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.borderbox{
+    min-width: calc(46rem + 20px);
+    margin-bottom: 3rem;
+}
+
+.box {
+    width: 40rem;
+    margin: auto;
+    /* height: 9.4rem; */
+    border: 1px solid #333131;
+    margin-top: 2.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.box nav{
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.boxContain {
+    margin-bottom: 0.2rem;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #333131;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.boxText {
+    font-family: "Georgia";
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-style: italic;
+    color: #848383;
+    text-decoration: none;
+    margin: 0.6rem;
+}
+
+
+.end {
+    margin: 2rem 0rem 2.5rem;
+    text-align: center;
+    min-width: calc(46rem + 20px);
+}
+
+.endText {
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.endPic {
+    margin: 0rem 0.8rem;
+    width: 25px;
+}
+
+.endPic img{
+    width: 100%;
+}
+
+.parent{
+    width: 100%;
+    min-width: calc(46rem + 20px);
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+    /* flex: none; */
+}
+
+.parent a{
+    width: 23rem;
+    margin: 5px;
+    /* flex-shrink: 0; */
+    flex: none;
+}
+
+.parent a img{
+    width: 23rem;
+    height: 22rem;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.natureText{
+    width: 47rem;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+
+.active{
+    color: #333131;
+}
