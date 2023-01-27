@@ -85,6 +85,7 @@ body {
 .parent a img{
     width: 23rem;
     height: 22rem;
+    object-fit: cover;
 }
 
 .content{
