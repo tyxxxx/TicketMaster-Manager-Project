@@ -1,0 +1,320 @@
+body {
+  background: url(/static/img/bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.clear {
+  clear: both;
+}
+
+.mb2 {
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.in-b{
+  display:inline-block;
+}
+
+
+.searchDiv {
+  margin: auto;
+  margin-top: 100px;
+  width: 500px;
+
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+
+  background-color: rgba(50, 50, 50, 0.7);
+  
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, .3);
+}
+
+.searchDiv .row{
+  margin: 10px 0;
+}
+
+.searchDiv input,  .searchDiv select{
+  color: white;
+
+  background-color: rgba(0,0,0,0);
+  
+  border: solid 1px #787575;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.searchDiv input {
+  height: 35px;
+}
+.searchDiv option{
+  background-color: #787575;
+}
+.searchDiv select {
+  height: 40px;
+  width: 100%;
+  color: white;
+}
+
+.searchDiv #detect{
+  height: 15px;
+}
+
+.hint {
+  color: #9BC8E3;
+}
+
+.red {
+  color: red;
+}
+
+input.full-input {
+  width: 98%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.halfDiv {
+  float: left;
+  width: 50%;
+}
+
+#distance{
+  width: 90%;
+  -moz-appearance: textfield;
+}
+#distance:hover{
+  width: 90%;
+  -moz-appearance: none;
+}
+
+.searchDiv .btn{
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+}
+
+#searchBtn:hover{
+  background-color: #ea671c;
+}
+#searchBtn:active{
+  background-color: #ce5d1b;
+}
+#searchBtn{
+  background-color: #ED752F;
+  box-shadow: 0px 5px 0px #d15d1a;
+}
+#clearBtn:hover{
+  background-color: #4561a4;
+}
+#clearBtn:active{
+  background-color: #3b5286;
+}
+#clearBtn{
+  background-color: #556EA7;
+  box-shadow: 0px 5px 0px #334674;
+}
+
+
+/** results */
+#results{
+  background-color: white;
+  width: 900px;
+  margin: 30px auto;
+}
+
+#results table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#results th{
+  background-color: #F0F0F0;
+  box-shadow: 0px 5px 3px #c1c0c0;
+}
+#results td, #results th{
+  border: solid 1px #787575;
+  text-align: center;
+  padding: 15px;
+}
+
+#results img{
+  margin: 5px;
+  width: 80px;
+}
+#results a{
+  color: black;
+  text-decoration: none;
+}
+#results a:hover{
+  color: #37ace7;
+}
+#results a:active{
+  color: #2198d3;
+}
+
+.no-result{
+  padding: 10px;
+}
+
+/** detail */
+#detail{
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  
+  background-color: rgba(50, 50, 50, 0.7);
+  
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, .3);
+
+  padding: 20px;
+  color: white;
+}
+.detail-main{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* grid-auto-rows: minmax(100px, auto); */
+
+  font-size: 10px;
+}
+#detail .left{
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+#detail .right{
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#detail .right img{
+  width: 90%;
+}
+
+#detail h1{text-align: center;}
+#detail .title{
+  font-size: 16px;
+  color: #9BFCE4;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#detail .link a{
+  color: #57BCED;
+  text-decoration: none;
+}
+#detail .link a:hover{
+  color: #37ace7;
+}
+#detail .link a:active{
+  color: #2198d3;
+}
+#detail .status .data{
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.status .onsale{ background-color: green; }
+.status .offsale{ background-color: red; }
+.status .canceled{ background-color: black; }
+.status .postponed, .status .rescheduled{ background-color: orange; }
+
+#showVenue{
+  width: 700px;
+  margin: 30px auto;
+  color: white;
+}
+#showVenue a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+  font-size: 40px;
+}
+#showVenue a:hover{
+  color: #37ace7;
+}
+#showVenue a:active{
+  color: #2198d3;
+}
+
+
+/** venue info */
+#venueInfo{
+  width: 700px;
+  margin: 10px auto;
+  background-color: white;
+  
+  padding: 20px;
+  border-radius: 10px;
+}
+.venueBorder{
+  border: solid 1px #333;
+  border-radius: 10px;
+}
+#venueInfo .title{
+  border-bottom: solid 1px #333;
+}
+
+.venue-main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.venue-main .left{
+  grid-column: 1 / 2;
+  grid-row: 1;
+  padding: 10px;
+}
+.venue-main .right{
+  grid-column: 2 / 3;
+  grid-row: 1;
+  border-left: solid 1px #333;
+  padding : 10px;
+}
+.venue-main .address{
+  font-weight: bold;
+}
+.venue-main a{
+  color: #57BCED;
+  text-decoration: none;
+}
+.venue-main a:hover{
+  color: #37ace7;
+}
+.venue-main a:active{
+  color: #2198d3;
+}
+
+.venue-addr .left1{
+  float: left;
+  width: 25%;
+}
+.venue-addr .right1{
+  float: left;
+  width: 75%;
+}

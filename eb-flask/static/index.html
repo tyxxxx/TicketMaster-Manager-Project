@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/util.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <form id="searchForm">
+
+      <div class="searchDiv">
+        <h2 class="text-center">Events Search</h2>
+        <hr>
+        <div class="hint row">Keyword<span class="red">*</span></div>
+        <div class="row">
+          <input type="text" class="full-input" name="keyword" id="keyword" required="true">
+        </div>
+        <div class="halfDiv">
+          <div class="hint row">Distance(miles)</div>
+          <div>
+            <input type="number" class="distance" placeholder="10" id="distance" name="distance"/>
+          </div>
+        </div>
+        <div class="halfDiv">
+          <div class="hint row">Category<span class="red">*</span></div>
+          <select name="" id="category" name="category">
+            <option value="Default">Default</option>
+            <option value="Music">Music</option>
+            <option value="Sports">Sports</option>
+            <option value="Arts">Arts & Theatre</option>
+            <option value="Film">Film</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+          </select>
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+          <span class="hint">Location</span><span class="red">*</span>
+          <input type="checkbox" name="detect" id="detect">
+          <label for="detect">Auto-Detect Location</label>
+        </div>
+        <div>
+          <input type="text" class="full-input" id="location" name="location" required="true">
+        </div>
+  
+        <div class="row">
+          <button class="btn search" id="searchBtn">SEARCH</button>
+          <input type="button" class="btn clear" id="clearBtn" onclick="clearClick()" value="CLEAR"/>
+        </div>
+  
+      </div>
+    </form>
+
+    <div id="results"></div>
+    <div id="detailBox">
+
+      <!-- <div id="detail">
+        <h1>Event name</h1>
+        <div class="detail-main">
+  
+          <div class="left">
+            <div id="d-date">
+              <div class="title">Date</div>
+              <div class="text data">2023-04-15 19:30:00</div>
+            </div>
+            <div id="d-artist">
+              <div class="title">Artist/Team</div>
+              <div class="link data">The Batman</div>
+            </div>
+            <div id="d-venue">
+              <div class="title">Venue</div>
+              <div class="text data">Dolby Theatre</div>
+            </div>
+            <div id="d-genres">
+              <div class="title">Genres</div>
+              <div class="text data">Film | Action</div>
+            </div>
+            <div id="d-price">
+              <div class="title">Price Ranges</div>
+              <div class="text data">40- 115 USD</div>
+            </div>
+            <div id="d-status">
+              <div class="title">Ticket Status</div>
+              <div class="status">
+                <span class="data">On Sale</span>
+              </div>
+            </div>
+            <div id="d-buyat">
+              <div class="title">Buy Ticket At:</div>
+              <div class="link data">Ticketmaster</div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/bg.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="showVenue" class="text-center">
+        Show Venue Details
+        <div>\/</div>
+      </div> -->
+    </div>
+    <div id="venueBox">
+      <!-- <div id="venueInfo">
+        <div class="venueBorder">
+          <div class="text-center">
+            <span class="title">Walt Disney Concert Hall</span>
+          </div>
+          <div class="venue-main">
+            <div class="left">
+              <div class="text-center">
+                <span class="address">Address:</span>111 South Grand Avenue
+              </div>
+              <div class="text-center">Los Angeles, CA</div>
+              <div class="text-center">90012</div>
+              <div class="open-map text-center">
+                <a href="" target="_blank">Open in Google Maps</a>
+              </div>
+            </div>
+            <div class="right text-center">
+              <a href="" target="_blank">More events at this venue</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>
